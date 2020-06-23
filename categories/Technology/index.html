@@ -123,6 +123,52 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
+            <a href="../../2020/06/22/django%E5%BB%BA%E7%AB%8Becommerce/" itemprop="url">django建立ecommerce</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-06-23T02:11:31.000Z" itemprop="datePublished">6月 22 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="">Technology</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            2 分钟 读完 (约 265 字)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><h1 id="&#x9879;&#x76EE;&#x5C1D;&#x8BD5;&#xFF1A;&#x7528;django&#x5EFA;&#x7ACB;&#x7B80;&#x6613;&#x7684;&#x8D2D;&#x7269;&#x7F51;&#x7AD9;"><a href="#&#x9879;&#x76EE;&#x5C1D;&#x8BD5;&#xFF1A;&#x7528;django&#x5EFA;&#x7ACB;&#x7B80;&#x6613;&#x7684;&#x8D2D;&#x7269;&#x7F51;&#x7AD9;" class="headerlink" title="&#x9879;&#x76EE;&#x5C1D;&#x8BD5;&#xFF1A;&#x7528;django&#x5EFA;&#x7ACB;&#x7B80;&#x6613;&#x7684;&#x8D2D;&#x7269;&#x7F51;&#x7AD9;"></a>&#x9879;&#x76EE;&#x5C1D;&#x8BD5;&#xFF1A;&#x7528;django&#x5EFA;&#x7ACB;&#x7B80;&#x6613;&#x7684;&#x8D2D;&#x7269;&#x7F51;&#x7AD9;</h1><p>DJANGO&#x662F;&#x4E00;&#x79CD;&#x4E13;&#x95E8;&#x7528;&#x6765;web&#x5F00;&#x53D1;&#x7684;&#x5F00;&#x53D1;&#x67B6;&#x6784;&#x3002;&#x901A;&#x8FC7;python&#x5F00;&#x53D1;&#xFF0C;&#x8F83;&#x4E3A;&#x7B80;&#x5355;&#x3002;&#x540C;&#x6837;&#x5B83;&#x53C8;&#x53EF;&#x4EE5;&#x6EE1;&#x8DB3;&#x5927;&#x591A;&#x6570;&#x7684;&#x9700;&#x6C42;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;&#x535A;&#x5BA2;&#xFF0C;&#x4EA4;&#x6D41;&#x793E;&#x533A;&#xFF0C;&#x56FE;&#x7247;&#x7F51;&#x7AD9;&#x7B49;&#xFF09;</p>
+<h2 id="DJANGO&#x5EFA;&#x7ACB;&#x7F51;&#x7AD9;"><a href="#DJANGO&#x5EFA;&#x7ACB;&#x7F51;&#x7AD9;" class="headerlink" title="DJANGO&#x5EFA;&#x7ACB;&#x7F51;&#x7AD9;:"></a>DJANGO&#x5EFA;&#x7ACB;&#x7F51;&#x7AD9;:</h2><ol>
+<li>&#x8BBE;&#x8BA1;&#x6A21;&#x578B; model </li>
+<li>&#x8BBE;&#x8BA1;&#x89C6;&#x56FE; views</li>
+<li>&#x8BBE;&#x8BA1;&#x94FE;&#x63A5; urls</li>
+<li>&#x8BBE;&#x8BA1;&#x6A21;&#x677F; Templates</li>
+</ol>
+<h2 id="MTV&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;"><a href="#MTV&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;" class="headerlink" title="MTV&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;"></a>MTV&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;</h2><p>MVC&#x6A21;&#x5F0F;&#xFF1A; &#x6A21;&#x578B;&#xFF08;MODEL&#xFF09;- &#x89C6;&#x56FE;&#xFF08;View&#xFF09;-&#x63A7;&#x5236;&#x5668;&#xFF08;Controller&#xFF09;&#x7684;&#x7F29;&#x5199;<br>M:&#x6570;&#x636E;&#x5B58;&#x53D6;&#x5C42;&#xFF0C;&#x8D1F;&#x8D23;&#x4E1A;&#x52A1;&#x5BF9;&#x8C61;&#x548C;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#x3002;<br>V&#xFF1A;&#x4E0E;&#x7528;&#x6237;&#x7684;&#x4EA4;&#x4E92;&#xFF0C;&#x8D1F;&#x8D23;&#x663E;&#x793A;&#x4E0E;&#x600E;&#x6837;&#x663E;&#x793A;&#x3002;<br>C&#xFF1A;&#x63A5;&#x53D7;&#x7528;&#x6237;&#x52A8;&#x4F5C;&#xFF0C;&#x8C03;&#x7528;&#x6A21;&#x578B;&#xFF0C;&#x8F93;&#x51FA;&#x76F8;&#x5E94;&#x89C6;&#x56FE;&#x3002;</p>
+<p>MTV&#x6A21;&#x5F0F;&#xFF1A;<br>M:&#x6A21;&#x578B;&#xFF08;MODEL&#xFF09;&#xFF0C;&#x8D1F;&#x8D23;&#x4E1A;&#x52A1;&#x5BF9;&#x8C61;&#x548C;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5173;&#x7CFB;&#x6620;&#x5C04;<br>T&#xFF1A;&#x6A21;&#x677F;&#xFF08;TEMPLATE&#xFF09;&#xFF0C; &#x8D1F;&#x8D23;&#x5982;&#x4F55;&#x628A;&#x9875;&#x9762;&#x5C55;&#x793A;&#x7ED9;&#x7528;&#x6237;&#x3002;<br>V&#xFF1A;&#x89C6;&#x56FE;&#xFF08;View&#xFF09;&#xFF0C;&#x8D1F;&#x8D23;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#xFF0C;&#x5E76;&#x5728;&#x9002;&#x5F53;&#x65F6;&#x5019;&#x8C03;&#x7528;&#x6A21;&#x578B;&#x548C;&#x6A21;&#x677F;&#x3002;</p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
             <a href="../../2020/06/18/%E6%96%B0%E5%BB%BADJANGO%E7%9A%84%E5%9D%91/" itemprop="url">新建DJANGO的坑</a>
         
     </h1>
